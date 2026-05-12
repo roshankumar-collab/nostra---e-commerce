@@ -24,12 +24,6 @@ Nostra is a modern and responsive fashion e-commerce website developed using HTM
 - HTML5
 - CSS3
 - JavaScript
-
----
-
-
----
-
 ---
 
 ## 🎯 Project Goal
@@ -53,7 +47,6 @@ The goal of this project is to improve frontend web development skills by buildi
 
 
 
-```
 
 ---
 
