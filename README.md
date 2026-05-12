@@ -45,10 +45,8 @@ The goal of this project is to improve frontend web development skills by buildi
 
 ## 🌐 Live Demo
 
+- https://roshankumar-collab.github.io/nostra---e-commerce/
 
-
-
----
 
 ## 📁 GitHub Repository
 
