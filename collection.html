@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!-- Link Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS DDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Offer Header -->
+    <div id="hideheading" class="header text-center bg-gray-800 flex items-center justify-center  md:gap-10">
+        <h1 class=" text-white text-2xl p-2 animate">Sign up and <span class="font-bold">GET 20% OFF</span> for your
+            first Order</h1>
+        <p id="hidebtn" class="text-white  cursor-pointer">X</p>
+    </div>
+
+    <!-- Responsive-Navbar -->
+    <nav class="bg-white flex items-center p-2 justify-between sticky top-0 z-20 shadow-md">
+        <div class="flex items-center">
+            <h1 class="text-3xl font-bold">Nostra</h1>
+            
+        </div>
+
+        <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <div class="hidden  md:flex">
+            <ul class="flex gap-20 text-gray-700">
+                <li><a class="hover:bg-black hover:text-white rounded-full p-2" href="index.html">Home</a></li>
+                <li><a class="hover:bg-black hover:text-white p-2 rounded-full" href="index.html">New Arrival</a></li>
+                <li><a class="hover:bg-black hover:text-white p-2 rounded-full" href="index.html">Most Wanted</a></li>
+                <li><a class="hover:bg-black hover:text-white p-2 rounded-full" href="collection.html">Collections</a>
+                </li>
+                <li><a class="hover:bg-black hover:text-white p-2 rounded-full" href="contact.html">Contact US</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- side Navbar -->
+    <section id="sideNav" class="bg-gray-900 transition-all duration-1000  fixed z-20 top-0 right-0"
+        style="height: 100vh; width: 50%; left: -50%;">
+
+        <div class="text-right p-5">
+            <p id="close-nav" class="cursor-pointer text-white">X</p>
+        </div>
+
+        <ul class=" flex flex-col gap-10 text-white  items-center ">
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="index.html">Home</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="product.html">New Arrival</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="contact.html">Most Wanted</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="collection.html">Collections</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- Collections -->
+    <div class="container">
+        <div class="container__filter">
+
+            <h3 class="filter-type1">filter</h3>
+            <div>
+                <input type="checkbox" name="check" value="summer"> Summer <br>
+                <input type="checkbox" name="check" value="winter"> Winter <br>
+                <input type="checkbox" name="check" value="party"> Party <br>
+                <input type="checkbox" name="check" value="beach"> Beach
+            </div>
+
+            <h3 class="filter-type2"> Colors </h3>
+            <div>
+                <input type="checkbox" name="check" value="red"> Red <br>
+                <input type="checkbox" name="check" value="blue"> Blue <br>
+                <input type="checkbox" name="check" value="white"> White <br>
+                <input type="checkbox" name="check" value="green"> Green <br>
+                <input type="checkbox" name="check" value="yellow"> Yellow <br>
+                <input type="checkbox" name="check" value="pin"> Pink
+            </div>
+
+            <h3 class="filter-type3"> Arrivals </h3>
+            <div>
+                <input type="checkbox" name="check" value="new"> New <br>
+                <input type="checkbox" name="check" value="old"> Old
+            </div>
+
+            
+
+            <h3 class="filter-type3"> Combo </h3>
+            <div>
+                <input type="checkbox" name="check" value="familycombo"> Family Combo<br>
+                <input type="checkbox" name="check" value="bridal"> Bridal
+            </div>
+
+            <h3 class="filter-type3">  </h3>
+            <div>
+                <input type="checkbox" name="check" value="salwar"> Salwar <br>
+                <input type="checkbox" name="check" value="saree"> Saree <br>
+                <input type="checkbox" name="check" value="tops"> Tops <br>
+                <input type="checkbox" name="check" value="fancy"> Fancy <br>
+                <input type="checkbox" name="check" value="night"> Night Dress
+            </div>
+
+
+            <hr class="vertical-line">
+
+        </div>
+
+        <div class="product-section">
+
+            <div class="search">
+                <input id="search" type="search" placeholder="search">
+            </div>
+
+            <div id="product-container" class="para products grid grid-cols-3 m-2 md:grid-cols-4">
+                <div class="p-2" data-tags=" mens">
+                    <img src="images/product1.jpg" alt="">
+                    <p>formal shirt</p>
+                </div>
+                <div class="p-2" data-tags="yellow mens">
+                    <img src="images/product2.jpg" alt="">
+                    <p>Pink shirt</p>
+                </div>
+                <div class="p-2" data-tags="white mens">
+                    <img src="images/product3.jpg" alt="">
+                    <p>strips shirt</p>
+                </div>
+                <div class="p-2" data-tags="mens">
+                    <img src="images/product4.jpg" alt="">
+                    <p>black shirt</p>
+                </div>
+                <div class="p-2" data-tags="womans party">
+                    <img src="images/product5.jpg" alt="">
+                    <p>blue formal shirt</p>
+                </div>
+                <div class="p-2" data-tags="green">
+                    <img src="images/product6.jpg" alt="">
+                    <p>pink strips shirt</p>
+                </div>
+                <div class="p-2" data-tags="salwar womans">
+                    <img src="images/product7.jpg" alt="">
+                    <p>white casual shirt</p>
+                </div>
+                <div class="p-2" data-tags="orange salwar womans">
+                    <img src="images/product8.jpg" alt="">
+                    <p>checked shirt</p>
+                </div>
+                <div class="p-2" data-tags="summer yellow new">
+                    <img src="images/product9.jpg" alt="">
+                    <p>blue strips shirt</p>
+                </div>
+                <div class="p-2" data-tags="salwar womans">
+                    <img src="images/product10.jpg" alt="">
+                    <p>white strip</p>
+                </div>
+                <div class="p-2" data-tags="night old">
+                    <img src="images/product11.jpg" alt="">
+                    <p>stripe shirt</p>
+                </div>
+                <div class="p-2" data-tags="kids new">
+                    <img src="images/product12.jpg" alt="">
+                    <p>printed shirt</p>
+                </div>
+                <div class="p-2" data-tags="womans white">
+                    <img src="images/product13.jpg" alt="">
+                    <p>checked shirt</p>
+                </div>
+                <div class="p-2" data-tags="kids">
+                    <img src="images/product14.jpg" alt="">
+                    <p>brown shirt</p>
+                </div>
+                <div class="p-2" data-tags="kids new">
+                    <img src="images/product15.jpg" alt="">
+                    <p>black shirt</p>
+                </div>
+                <div class="p-2" data-tags="mens old">
+                    <img src="images/product16.jpg" alt="">
+                    <p>brown stripe shirt</p>
+                </div>
+                <div class="p-2" data-tags="kids">
+                    <img src="images/product17.jpg" alt="">
+                    <p>stripe shirt</p>
+                </div>
+                <div class="p-2" data-tags="womans new">
+                    <img src="images/product18.jpg" alt="">
+                    <p>half sleeve shirt</p>
+                </div>
+                <div class="p-2" data-tags="salwar fancy womans old">
+                    <img src="images/product19.jpg" alt="">
+                    <p>formal shirt</p>
+                </div>
+                <div class="p-2" data-tags="fancy tops old womans">
+                    <img src="images/product20.jpg" alt="">
+                    <p>green shirt</p>
+                </div>
+                <div class="p-2" data-tags="mens old">
+                    <img src="images/product21.jpg" alt="">
+                    <p>half sleeve shirt</p>
+                </div>
+                <div class="p-2" data-tags="new bridal couple">
+                    <img src="images/product22.jpg" alt="">
+                    <p>brown linen shirt</p>
+                </div>
+                <div class="p-2" data-tags="bridal couple">
+                    <img src="images/product23.jpg" alt="">
+                    <p>checked shirt</p>
+                </div>
+                <div class="p-2" data-tags="couple old bridal">
+                    <img src="images/product24.jpg" alt="">
+                    <p>pink formal shirt</p>
+                </div>
+                <div class="p-2" data-tags="fancy saree woman">
+                    <img src="images/product25.jpg" alt="">
+                    <p>checked shirt</p>
+                </div>
+                <div class="p-2" data-tags="fancy saree womans">
+                    <img src="images/product26.jpg" alt="">
+                    <p>half sleeve</p>
+                </div>
+                <div class="p-2" data-tags="saree womans old">
+                    <img src="images/product27.jpg" alt="">
+                    <p>white linen</p>
+                </div>
+                <div class="p-2" data-tags="winter kids old">
+                    <img src="images/product28.jpg" alt="">
+                    <p>party Wear</p>
+                </div>
+                <div class="p-2" data-tags="summer kids old">
+                    <img src="images/product29.jpg" alt="">
+                    <p>formal shirt</p>
+                </div>
+                <div class="p-2" data-tags="mens">
+                    <img src="images/product30.jpg" alt="">
+                    <p>blue formal</p>
+                </div>
+                <div class="p-2" data-tags="beach couple">
+                    <img src="images/product31.jpg" alt="">
+                    <p>half sleeve</p>
+                </div>
+                <div class="p-2" data-tags="party womans">
+                    <img src="images/product32.jpg" alt="">
+                    <p>printed shirt</p>
+                </div>
+                <div class="p-2" data-tags="party mens">
+                    <img src="images/product33.jpg" alt="">
+                    <p>strips shirt</p>
+                </div>
+                <div class="p-2" data-tags="winter mens">
+                    <img src="images/product34.jpg" alt="">
+                    <p>pink formal shirt</p>
+                </div>
+                <div class="p-2" data-tags="winter womans">
+                    <img src="images/product35.jpg" alt="">
+                    <p>cuban coller shirt</p>
+                </div>
+                <div class="p-2" data-tags=" familycombo">
+                    <img src="images/product36.jpg" alt="">
+                    <p>brown cuban shirt</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- signup content -->
+    <div class="text-center p-5">
+        <h1 class="text-2xl font-bold md:text-4xl">Join our News Letter</h1>
+        <p class="mt-3 md:text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class="border-black border-2 mt-3 md:w-1/2 p-2 " type="text"><br>
+        <button class="mt-3 bg-black text-white p-2 hover:bg-gray-600  rounded-lg ">Subscribe<i
+                class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!-- Footer Values -->
+    <section class="bg-gray-50">
+        <div class="flex justify-between p-3  md:p-10 md:justify-around">
+            <div>
+                <h1 class="font-bold">ONLINE SHOPPING</h1>
+                <div class="flex flex-col">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Home</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                <h1 class="font-bold">ONLINE SHOPPING</h1>
+                <div class="flex flex-col">
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Site-Map</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Nostra Global</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="font-bold">CUSTOMER POLICY</h1>
+                <div class="flex flex-col">
+                    <a href="#">contact Us</a>
+                    <a href="#">Terms and Use</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="font-bold">EXPERIENCE NOSTRA APP IN MOBILE</h1>
+                <div class="flex gap-2">
+                    <a href="https://play.google.com/"><img class="h-10 mt-5" src="images/gplay.jpg" alt=""></a>
+                    <a href="https://www.apple.com/in/app-store/"><img class="h-12 mt-5" src="images/appstore.jpeg"
+                            alt=""></a>
+                </div>
+                <h1 class="font-bold mt-20">KEEP IN TOUCH</h1>
+                <div class="flex gap-2 md:gap-x-10 mt-5 text-2xl">
+                    <div>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center gap-2">
+                    <p class="text-3xl text-gray-500"><i class="fa-solid fa-medal"></i></p>
+                    <p><span class="font-bold">100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                </div>
+                <div class="flex items-center mt-10 gap-2">
+                    <p class="text-3xl text-gray-500"><i class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                    <p><span class="font-bold">Return within 14days</span> of receiving your order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-black text-white p-10">
+        <div>
+            <h1 class="text-4xl md:text-6xl  font-bold">Nostra</h1>
+            <p class="mt-5 md:text-2xl">Explore the latest trends in fashion with styles that speak to you. From
+                everyday essentials to bold
+                statements, we've got your look covered.</p>
+        </div>
+        <div class="flex gap-x-10 mt-5 text-2xl">
+            <div>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div>
+                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="mt-5">
+            <p class="text-2xl">&copy 2026 <a href="index.html" class="hover:underline text-blue-900">Nostra.com</a></p>
+        </div>
+    </section>
+
+
+    <script src="collection.js"></script>
+</body>
+
+</html>

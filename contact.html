@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra-Contact</title>
+    <!-- Tailwind Css CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Offer Header -->
+    <div id="hideheading" class="header text-center bg-gray-800 flex items-center justify-center gap-10">
+        <marquee behavior="" direction="">
+            <a href="#">
+                <h1 class=" text-white md:text-2xl p-2 animate">Sign up and <span class="font-bold">GET 20% OFF</span>
+                    for your first Order</h1>
+            </a>
+        </marquee>
+
+        <p id="hidebtn" class="text-white  cursor-pointer mr-20">X</p>
+    </div>
+
+    <!-- Responsive-Navbar -->
+    <nav class="bg-white flex items-center p-2 justify-between sticky top-0 z-20 shadow-md">
+        <div class="flex items-center">
+            <h1 class="text-3xl font-bold">Nostra</h1>
+            <img src="images/nostra_f-removebg-preview.png" alt="">
+        </div>
+
+        <svg id="menuicon" class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <div class="hidden  md:flex">
+            <ul class="flex gap-20 text-gray-700">
+                <li><a class="hover:bg-black hover:text-white rounded-full p-2" href="index.html">Home</a></li>
+                <li><a id="newArrival" class="hover:bg-black hover:text-white p-2 rounded-full" href="index.html">New
+                        Arrival</a></li>
+                <li><a id="mostWanted" class="hover:bg-black hover:text-white p-2 rounded-full" href="index.html">Most
+                        Wanted</a></li>
+                <li><a class="hover:bg-black hover:text-white p-2 rounded-full" href="collection.html">Collections</a>
+                </li>
+                <li><a class="hover:bg-black hover:text-white p-2 rounded-full" href="contact.html">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- side Navbar -->
+    <section id="sideNav" class="bg-gray-900 transition-all duration-1000  fixed z-20 top-0 right-0"
+        style="height: 100vh; width: 50%; left: -50%;">
+
+        <div class="text-right p-5">
+            <p id="close-nav" class="cursor-pointer text-white">X</p>
+        </div>
+
+        <ul class=" flex flex-col gap-10 text-white  items-center ">
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="index.html">Home</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="#new-arrival">New Arrival</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="#most-wanted">Most Wanted</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="collection.html">Collections</a></li>
+            <li><a class="hover:bg-white hover:text-black rounded-full p-2" href="contact.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <form class="bg-gray-100 flex items-center justify-center ">    
+        <div id="myForm" class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mt-10">
+            <h2 class="text-3xl text-white font-bold mb-4 text-center">Contact Form <i class="fa-solid fa-address-book"></i></h2>
+
+            <label class="block text-white mb-1">First Name</label>
+            <input type="text" placeholder="Enter your Name" id="name"
+                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-400 " />
+            <span class="nameError text-red-500 text-sm hidden">Name must contain only letters</span>
+
+            <label class="block text-white mt-4 mb-1">Email</label>
+            <input type="text" placeholder="Enter your Email" id="email"
+                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-400" />
+            <span class="emailError text-red-500 text-sm hidden">Please provide a valid Gmail address</span>
+
+            <label class="block text-white mt-4 mb-1">Phone Number</label>
+            <input type="text" placeholder="Enter your Number" id="phone"
+                class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-400" />
+            <span class="phoneError text-red-500 text-sm hidden">Phone number must contain exactly 10 digits</span>
+
+            <input type="submit" id="submit" value="Submit"
+                class="w-full mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md cursor-pointer" />
+        </div>
+    </form>
+
+    <!-- signup content -->
+    <div class="text-center p-5">
+        <h1 class="text-2xl font-bold md:text-4xl">Join our News Letter</h1>
+        <p class="mt-3 md:text-2xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class="border-black border-2 mt-3 md:w-1/2 p-2 " type="text"><br>
+        <button class="mt-3 bg-black text-white p-2 hover:bg-gray-600 rounded-lg ">Subscribe<i
+                class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!-- Footer Values -->
+    <section class="bg-gray-50">
+        <div class="flex justify-between p-3  md:p-10 md:justify-around">
+            <div>
+                <h1 class="font-bold">ONLINE SHOPPING</h1>
+                <div class="flex flex-col">
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Home</a>
+                    <a href="#">Beauty</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+                <h1 class="font-bold">ONLINE SHOPPING</h1>
+                <div class="flex flex-col">
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Site-Map</a>
+                    <a href="#">Corporate Information</a>
+                    <a href="#">Nostra Global</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="font-bold">CUSTOMER POLICY</h1>
+                <div class="flex flex-col">
+                    <a href="#">contact Us</a>
+                    <a href="#">Terms and Use</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Cancellation</a>
+                    <a href="#">Returns</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div>
+                <h1 class="font-bold">EXPERIENCE NOSTRA APP IN MOBILE</h1>
+                <div class="flex gap-2">
+                    <a href="https://play.google.com/"><img class="h-10 mt-5" src="images/gplay.jpg" alt=""></a>
+                    <a href="https://www.apple.com/in/app-store/"><img class="h-12 mt-5" src="images/appstore.jpeg"
+                            alt=""></a>
+                </div>
+                <h1 class="font-bold mt-20">KEEP IN TOUCH</h1>
+                <div class="flex gap-2 md:gap-x-10 mt-5 text-2xl">
+                    <div>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex items-center gap-2">
+                    <p class="text-3xl text-gray-500"><i class="fa-solid fa-medal"></i></p>
+                    <p><span class="font-bold">100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                </div>
+                <div class="flex items-center mt-10 gap-2">
+                    <p class="text-3xl text-gray-500"><i class="fa-solid fa-arrow-right-arrow-left"></i></p>
+                    <p><span class="font-bold">Return within 14days</span> of receiving your order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-black text-white p-10">
+        <div>
+            <h1 class="text-4xl md:text-6xl  font-bold">Nostra</h1>
+            <p class="mt-5 md:text-2xl">Explore the latest trends in fashion with styles that speak to you. From
+                everyday essentials to bold
+                statements, we've got your look covered.</p>
+        </div>
+        <div class="flex gap-x-10 mt-5 text-2xl">
+            <div>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+                <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div>
+                <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="mt-5">
+            <p class="text-2xl">&copy 2026 <a href="index.html" class="hover:underline text-blue-900">Nostra.com</a></p>
+        </div>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
